@@ -1,4 +1,4 @@
-# BEM Utilities
+# BEM and classNames Utilities
 
 ## This is functions for generate bem classnames in react apps.
 
