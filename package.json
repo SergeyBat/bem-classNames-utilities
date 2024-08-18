@@ -1,0 +1,22 @@
+{
+  "name": "bem-utils",
+  "version": "1.0.0",
+  "main": "index.ts",
+  "scripts": {
+    "test:bemOnlyModuleFile": "jest bem",
+    "test:universalBem": "jest classNames"
+  },
+  "author": "Sergey Batagov",
+  "license": "ISC",
+  "description": "Functions for generate bem classnames in react apps.",
+  "devDependencies": {
+    "@types/jest": "^29.5.12",
+    "jest": "^29.7.0",
+    "ts-jest": "^29.2.4",
+    "typescript": "^5.5.4"
+  },
+  "dependencies": {
+    "@babel/preset-env": "^7.25.3",
+    "babel-jest": "^29.7.0"
+  }
+}
