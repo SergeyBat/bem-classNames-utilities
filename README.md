@@ -5,13 +5,6 @@
 
 #### [BEM](bem%2Findex.ts) is recommended to use
 
-
-In SCSS Modules a hash will be added for all classes as in the module file
-
-for example module 'title' => 'title_hash'
-for example module 'component-name__title' => 'component-name__title_hash'
-
-
 ### How to use:
 
 ***
@@ -19,7 +12,7 @@ for example module 'component-name__title' => 'component-name__title_hash'
 1. [bem](bem%2Findex.ts)
    #### Standard usage
 ```tsx
-import { bem } from "./bem-utils";
+import { bem } from "./bem-classNames-utilities";
 import './index.scss';
   
 const b = bem('component-name');
@@ -40,10 +33,9 @@ const b = bem('component-name');
 <br>
 <br>
 
-   #### If use SCSS Modules
-A ***hash*** will be added for all classes from the module, as in the module file
+   #### If use SCSS Modules or Next.js
 ```tsx
-import { bem } from "./bem-utils";
+import { bem } from "./bem-classNames-utilities";
 import styles from "./index.module.scss";
   
 const b = bem('component-name', styles);
@@ -66,10 +58,10 @@ const b = bem('component-name', styles);
 2. [classNames](classNames%2Findex.ts)
    #### Standard usage
 ```tsx
-import { classNames as cs } from "./bem-utils";
+import { classNames as cs } from "./bem-classNames-utilities";
 import './index.scss';
 
-// classname will be 'component-name'
+// classname will be ''
 <div className={cs('')} >
    // classname will be 'title'
    <h1 className={cs('title')}> title text </h1>
@@ -85,10 +77,9 @@ import './index.scss';
 <br>
 <br>
 
-   #### If use SCSS Modules
-A ***hash*** will be added for all classes from the module, as in the module file
+   #### If use SCSS Modules or Next.js
 ```tsx
-import { classNames as cs } from "./bem-utils";
+import { classNames as cs } from "./bem-classNames-utilities";
 import './global.scss';
 import styles from './index.scss';
 
