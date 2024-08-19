@@ -41,7 +41,7 @@ export function bem(
           fullElementName.concat('_', className),
           styles
         )),
-      ...additionalStyles,
+      ...additionalStyles.filter(value => Boolean(value)),
     ].join(' ');
   }
 };
