@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "main": "index.ts",
   "scripts": {
-    "test:bemOnlyModuleFile": "jest bem",
-    "test:universalBem": "jest classNames"
+    "test:bem": "jest bem",
+    "test:classNames": "jest classNames"
   },
   "author": "Sergey Batagov",
   "license": "ISC",
